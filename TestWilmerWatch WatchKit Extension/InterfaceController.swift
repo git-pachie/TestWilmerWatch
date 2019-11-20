@@ -30,8 +30,61 @@ class InterfaceController: WKInterfaceController {
 
     @IBAction func btnVibrateClick() {
         
-        WKInterfaceDevice.current().play(.click)
-        print("Vibrate executed")
+        //direction
+        //directionUp
+        //failure
+        //notificqtion
+        //retry
+        //start
+        //stop
+        
+        
+        
+//        WKInterfaceDevice.current().play(.)
+//        print("Vibrate executed")
+        
+        vibrate(hepticsType: .directionDown)
+        
+    }
+    
+    func vibrate(hepticsType: WKHapticType)  {
+       
+        WKInterfaceDevice.current().play(hepticsType)
+        print("Executed : \(hepticsType.rawValue)")
+    }
+    
+    
+    @IBAction func btnDirectionUp()
+    {
+        vibrate(hepticsType: .directionUp)
+    }
+    
+    @IBAction func btnFailure()
+    {
+        vibrate(hepticsType: .failure)
+    }
+    
+    @IBAction func btnStart()
+    {
+        vibrate(hepticsType: .start)
+    }
+    
+    @IBAction func btnStop()
+    {
+        vibrate(hepticsType: .stop)
+    }
+    
+    @IBAction func btnSuccess()
+    {
+        
+        print("-------->")
+        for n in 1...10
+        {
+            vibrate(hepticsType: .success)
+            print("btn success \(n)")
+            sleep(1)
+        }
+        
         
     }
 }

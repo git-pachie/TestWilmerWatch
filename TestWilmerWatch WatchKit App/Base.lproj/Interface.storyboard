@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15505" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
     </dependencies>
     <scenes>
@@ -11,10 +11,34 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TestWilmerWatch_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" alignment="center" verticalAlignment="center" text="Hello World" textAlignment="center" id="tGR-Qo-JO6"/>
-                        <button width="1" alignment="left" title="Vibrate" id="GI1-Wi-EEN">
+                        <button width="1" alignment="left" title="Direction" id="GI1-Wi-EEN">
                             <connections>
                                 <action selector="btnVibrateClick" destination="AgC-eL-Hgc" id="Rse-9y-ajH"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="DirectionUP" id="1Xj-Wv-zxH">
+                            <connections>
+                                <action selector="btnDirectionUp" destination="AgC-eL-Hgc" id="ArP-Xf-KfV"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Failure" id="fhZ-CZ-aF9">
+                            <connections>
+                                <action selector="btnFailure" destination="AgC-eL-Hgc" id="NBl-mQ-mXh"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Start" id="hMt-oU-16V">
+                            <connections>
+                                <action selector="btnStart" destination="AgC-eL-Hgc" id="9AC-xY-8e9"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Stop" id="uke-Vg-JBd">
+                            <connections>
+                                <action selector="btnStop" destination="AgC-eL-Hgc" id="fIf-u8-FJP"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Succes 10x" id="rl4-cN-EFe">
+                            <connections>
+                                <action selector="btnSuccess" destination="AgC-eL-Hgc" id="88A-KH-QFh"/>
                             </connections>
                         </button>
                     </items>
